@@ -43,7 +43,7 @@ The database management system used in the ETL is **postgres**
 ## Tools
 
 <img src='./images/python.svg' alt="python" title="python"/>
-<img src='./images/numpy.svg' alt="numpy" title="numpy" width="100" height="48"/>
+<img src='./images/NumPy.svg' alt="numpy" title="numpy" width="100" height="48"/>
 <img src='./images/Pandas.svg' alt="pandas" title="pandas" width="100" height="48"/>
 <img src='./images/psycopg.svg' alt="psycopg" title="psycopg" width="50" height="48"/>
 <img src='./images/Postgresql.svg' alt="Postgresql" title="Postgresql" width="50" height="48"/>
@@ -65,7 +65,7 @@ Sparkify Schema is a star schema built for analysis and we can update it only wi
 
 Star Schema consists of facts and dimensions 
 
-![Database_Schema](/images/schema/Schema.png)
+![Database_Schema](/images/Schema/Schema.png)
 
 ### Facts
 
@@ -74,7 +74,7 @@ Star Schema consists of facts and dimensions
 - Records with page NextSong
 
 Members:-
-![songplays](images/schema/songplays.png)
+![songplays](images/Schema/songplays.png)
 * `songplay_id` 
 * `start_time`
 * `user_id`
@@ -99,7 +99,7 @@ We have 4 dimensions which is `songs`, `artists`, `users`, `time`
 
 * timestamps of records in songplays broken down into specific units
 
-![Time](images/schema/time.png)
+![Time](images/Schema/time.png)
 
 Members:-
 
@@ -117,7 +117,7 @@ The Time dimension helps us to make the data consistant in the schema and remove
 
 * Songs in music database
 
-![Songs](./images/schema/songs.png)
+![Songs](./images/Schema/songs.png)
 
 Members:-
 
@@ -132,7 +132,7 @@ Members:-
 
 * Artists in music database
 
-![Artists](images/schema/artists.png)
+![Artists](images/Schema/artists.png)
 
 Members:-
 
@@ -147,7 +147,7 @@ Members:-
 
 * Users in the app
 
-![Users](images/schema/users.png)
+![Users](images/Schema/users.png)
 
 Members:-
 
