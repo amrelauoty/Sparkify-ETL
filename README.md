@@ -63,7 +63,9 @@ Sparkify Schema is a star schema built for analysis and we can update it only wi
 
 Star Schema consists of facts and dimensions 
 
-![Database_Schema](/images/Schema/Schema.png)
+<p style="text-align:center">
+  <img src="./images/Schema/Schema.png" alt="Database Schema">
+</p>
 
 ### Facts
 
@@ -71,8 +73,14 @@ Star Schema consists of facts and dimensions
 - Records in log data associated with song plays 
 - Records with page NextSong
 
+
+<p style="text-align:center">
+  <img src="./images/Schema/songplays.png" alt="Songplays">
+</p>
+
+
 Members:-
-![songplays](images/Schema/songplays.png)
+
 * `songplay_id` 
 * `start_time`
 * `user_id`
@@ -97,7 +105,9 @@ We have 4 dimensions which is `songs`, `artists`, `users`, `time`
 
 * timestamps of records in songplays broken down into specific units
 
-![Time](images/Schema/time.png)
+<p style="text-align:center">
+  <img src="./images/Schema/time.png" alt="Time">
+</p>
 
 Members:-
 
@@ -115,7 +125,9 @@ The Time dimension helps us to make the data consistant in the schema and remove
 
 * Songs in music database
 
-![Songs](./images/Schema/songs.png)
+<p style="text-align:center">
+  <img src="./images/Schema/songs.png" alt="Songs">
+</p>
 
 Members:-
 
@@ -130,7 +142,9 @@ Members:-
 
 * Artists in music database
 
-![Artists](images/Schema/artists.png)
+<p style="text-align:center">
+<img src="./images/Schema/artists.png" alt="Artists">
+</p>
 
 Members:-
 
@@ -145,7 +159,9 @@ Members:-
 
 * Users in the app
 
-![Users](images/Schema/users.png)
+<p style="text-align:center">
+  <img src="./images/Schema/users.png" alt="Users">
+</p>
 
 Members:-
 

@@ -54,7 +54,7 @@ create table if not exists time(
 
 songplay_table_create = ("""
 create table if not exists songplays(
-    songplay_id varchar, 
+    songplay_id serial primary key not null, 
     start_time timestamp not null, 
     user_id int not null, 
     level varchar, 
@@ -82,8 +82,8 @@ create table if not exists songplays(
 # INSERT RECORDS
 
 songplay_table_insert = ("""
-insert into songplays(songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
-values(%s,%s,%s,%s,%s,%s,%s,%s,%s)
+insert into songplays(start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
+values(%s,%s,%s,%s,%s,%s,%s,%s)
 ON CONFLICT
 DO NOTHING
 """)
@@ -91,8 +91,8 @@ DO NOTHING
 user_table_insert = ("""
 insert into users(user_id, first_name, last_name, gender, level)
 values(%s,%s,%s,%s,%s)
-ON CONFLICT (user_id)
-DO NOTHING
+ON CONFLICT (user_id) DO UPDATE
+SET level = EXCLUDED.level
 """)
 
 song_table_insert = ("""
@@ -120,11 +120,11 @@ DO NOTHING
 # FIND SONGS
 
 song_select = ("""
-select songs.song_id, songs.artist_id
+select songs.song_id, artists.artist_id
 from songs 
 join artists 
 on songs.artist_id = artists.artist_id
-where title = %s and name = %s and duration = %s 
+where songs.title = %s and artists.name = %s and songs.duration = %s 
 """)
 
 # QUERY LISTS
