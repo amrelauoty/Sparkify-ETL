@@ -41,12 +41,10 @@ The ETL extracts the data from songs and log files into a single database as rea
 
 The database management system used in the ETL is **postgres**
 ## Tools
-
-<img src='./images/python.svg' alt="python" title="python"/>
-<img src='./images/NumPy.svg' alt="numpy" title="numpy" width="100" height="48"/>
-<img src='./images/Pandas.svg' alt="pandas" title="pandas" width="100" height="48"/>
-<img src='./images/psycopg.svg' alt="psycopg" title="psycopg" width="50" height="48"/>
-<img src='./images/Postgresql.svg' alt="Postgresql" title="Postgresql" width="50" height="48"/>
+<p style="float:left">
+<img src='./images/python.svg' alt="python" title="python"/><img src='./images/NumPy.svg' alt="numpy" title="numpy" width="100" height="48"/><img src='./images/Pandas.svg' alt="pandas" title="pandas" width="100" height="48"/><img src='./images/psycopg.svg' alt="psycopg" title="psycopg" width="50" height="48"/><img src='./images/Postgresql.svg' alt="Postgresql" title="Postgresql" width="50" height="48"/>
+</p>
+<div style="clear:both">
 
 
 ## Usage
