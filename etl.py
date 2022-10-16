@@ -1,7 +1,8 @@
 import os
 import glob
 import psycopg2
-import pandas as pd 
+import pandas as pd
+import datetime
 from sql_queries import *
 
 
